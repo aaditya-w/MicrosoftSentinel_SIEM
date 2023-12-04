@@ -1,56 +1,77 @@
-# Microsoft_Sentinel_SIEM
+# Azure Sentinel SIEM Implementation
+<br>
+This project showcases the successful deployment of Microsoft Sentinel, a powerful SIEM solution, in the Azure Cloud environment. Leveraging custom analytics rules using KQL, it enhances security event detection and enables thorough incident investigations. The project covers aspects like user entity behavior analysis, watchlist creation, scheduled rule configuration and exploring the implementation workflow for a comprehensive understanding of Azure Sentinel's capabilities.
+<br>
+<br>
 
-This project showcases the successful deployment of Microsoft Sentinel, a powerful SIEM solution, in the Azure Cloud environment. Leveraging custom analytics rules using KQL, it enhances security event detection and enables thorough incident investigations. The project covers aspects like user entity behavior analysis, watchlist creation, and scheduled rule configuration. Explore the implementation workflow for a comprehensive understanding of Azure Sentinel's capabilities
-
-Prerequisites
+### Prerequisites:
 Before starting with this project, make sure you have the following:
-
-Azure Account:
+- Azure Account:
 Create or use an existing Azure Cloud account.
+- Microsoft Sentinel:
+ Obtain the necessary licenses for Microsoft Sentinel.
+- Azure Sentinel Workspace:
+ Set up an Azure Sentinel workspace following the official documentation.
+- Access Permissions:
+ Ensure your Azure account has the required permissions for resource deployment.
 
-Microsoft Sentinel:
-Obtain the necessary licenses for Microsoft Sentinel.
+<br>
 
-Azure Sentinel Workspace:
-Set up an Azure Sentinel workspace following the official documentation.
+### Configuration Snapshots:
 
-Access Permissions:
-Ensure your Azure account has the required permissions for resource deployment.
+#### Custom Deployment
+- Execute a customized deployment of Microsoft Sentinel within the Azure Cloud environment.
+- Github Repository for Deployment: (https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Sentinel-All-In-One)
 
+![Imgur](https://i.imgur.com/my8ctDy.jpg)
 
-Configuration Snapshots:
-
-1. Custom Deployment
-Execute a customized deployment of Microsoft Sentinel within the Azure Cloud environment.
-Github Repository for Deployment: (https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Sentinel-All-In-One)
-[Imgur](https://i.imgur.com/my8ctDy.png)
-
-
-2.Diagnostic Settings
-Configure diagnostic settings to capture relevant data for analysis within Azure Sentinel.
-[Imgur](https:/i./imgur.com/CG6xIQd.png)
-
-Sentinel DashBoard or Overview
-Showcases the overview of Microsoft Sentinel, illustrating a holistic view of security data.
-[Imgur](https://i.imgur.com/JWpXKcW.png)
-
-Sentinel Logs
-Highlight the logs section in Azure Sentinel, emphasizing the recorded security events.
-[Imgur](https://imgur.com/tJcSgEz)
+<br>
 
 
-Entity Behaviour Configuration
-Setting up configurations for monitoring and analyzing user entity behavior within the environment.
-[Imgur](https://imgur.com/yAa35hc)
+#### Diagnostic Settings
+- Configure diagnostic settings to capture relevant data for analysis within Azure Sentinel.
 
-Watchlist creation
-Create and configure watchlists for tracking specific entities.
-[Imgur](https://imgur.com/5g0Pgqq)
+ ![Imgur](https://i.imgur.com/KagDPMO.jpg)
+ 
+ <br>
+ 
+
+#### Sentinel  Overview
+- Showcases the overview of Microsoft Sentinel, illustrating a holistic view of security data.
+
+![Imgur](https://i.imgur.com/JWpXKcW.jpg)
+
+<br>
+
+#### Sentinel Logs
+- Highlight the logs section in Azure Sentinel, emphasizing the recorded security events.
+
+![Imgur](https://i.imgur.com/tJcSgEz.jpg)
+
+<br>
 
 
-Analytics Rule
-Implement custom analytics rules using KQL to enhance security event detection.
-Query:
+#### Entity Behaviour Configuration
+- Setting up configurations for monitoring and analyzing user entity behavior within the environment.
+
+![Imgur](https://i.imgur.com/yAa35hc.jpg)
+
+<br>
+
+
+#### Watchlist creation
+- Create and configure watchlists for tracking specific entities.
+
+![Imgur](https://i.imgur.com/5g0Pgqq.jpg)
+
+<br>
+
+
+#### Analytics Rule
+- Implement custom analytics rules using KQL to enhance security event detection.
+
+KQL Rule:
+```bash
 let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
  SigninLogs
  | where IPAddress in (TorNodes)
@@ -68,51 +89,98 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
     AuthenticationRequirement,
     ClientAppUsed,
     ConditionalAccessPolicies
-[Imgur](https://imgur.com/6agcuGf)
-[Imgur](https://imgur.com/xEjUhgO)
+```
 
-Creating New User
-Create a new user account within the Azure environment.
-[Imgur](https://imgur.com/tLKUvh7)
+<br>
 
-Assigning role to new user
-Assign roles to a newly created user account.
-[Imgur](https://imgur.com/AlgOglV)
+![Imgur](https://i.imgur.com/6agcuGf.jpg)
+![Imgur](https://i.imgur.com/xEjUhgO.jpg)
 
-New user login
-Log into the new user settings to simulate user activity for analysis.
-[Imgur](https://imgur.com/5lHhmus)
+<br>
 
-Delete Diagnosic Setting
-Delete diagnostic settings for user.
-[Imgur](https://imgur.com/dRAlQAl)
+#### Creating New User
+- Create a new user account within the Azure environment.
 
-Creating VM
-Creating a virtual machine in the Azure environment.
-[Imgur](https://imgur.com/n6v7cJJ)
+![Imgur](https://i.imgur.com/tLKUvh7.jpg)
 
-Default user sentinel overview
-Display the default user's view of the Sentinel overview for a comprehensive understanding.
-[Imgur](https://imgur.com/5kqDpAA)
+<br>
 
-Captured Incidents
-View and analyze incidents captured by Azure Sentinel during the investigation.
-[Imgur](https://imgur.com/baLriCO)
 
-Investigating Incident
-Use SIEM tools and techniques to investigate and analyze captured incidents.
-[Imgur](https://imgur.com/mfJuygg)
+#### Assigning role to new user
+- Assign roles to a newly created user account.
 
-Logs
-Display logs generated by Azure Sentinel during the monitoring and investigation process.
-[Imgur](https://imgur.com/HHimdjo)
+![Imgur](https://i.imgur.com/AlgOglV.jpg)
 
-Closing Incidents
-Take actions and close incidents based on the investigation findings.
-[Imgur](https://imgur.com/aYmaDBs)
+<br>
 
-AbuseIPDB
-[Imgur](https://imgur.com/AnQSAeT)
+
+#### New user login
+- Log into the new user settings to simulate user activity for analysis.
+
+![Imgur](https://i.imgur.com/5lHhmus.jpg)
+
+<br>
+
+
+#### Delete Diagnostic Setting
+- Deleting diagnostic settings for user.
+
+![Imgur](https://i.imgur.com/dRAlQAl.jpg)
+
+<br>
+
+
+#### Creating VM
+- Creating a virtual machine in the Azure environment.
+
+![Imgur](https://i.imgur.com/n6v7cJJ.jpg)
+![Imgur](https://i.imgur.com/Np5GgKc.jpg)
+
+<br>
+
+
+#### Microsoft Sentinel Overview
+- Displaying the Sentinel overview for a comprehensive understanding.
+
+![Imgur](https://i.imgur.com/5kqDpAA.jpg)
+
+<br>
+
+
+#### Captured Incidents
+- View and analyze incidents captured by Azure Sentinel during the investigation.
+
+![Imgur](https://i.imgur.com/baLriCO.jpg)
+
+<br>
+
+
+#### Investigating Incident
+- Investigate and analyze captured incidents.
+
+![Imgur](https://i.imgur.com/mfJuygg.jpg)
+
+<br>
+
+
+#### Logs
+- Display logs generated by Azure Sentinel during the monitoring and investigation process.
+
+![Imgur](https://i.imgur.com/HHimdjo.jpg)
+
+<br>
+
+
+#### Closing Incidents
+- Take actions and close incidents based on the investigation findings.
+
+![Imgur](https://i.imgur.com/aYmaDBs.jpg)
+
+<br>
+
+
+#### AbuseIPDB
+![Imgur](https://i.imgur.com/AnQSAeT.jpg)
 
 
 
