@@ -16,3 +16,6 @@ Set up an Azure Sentinel workspace following the official documentation.
 
 Access Permissions:
 Ensure your Azure account has the required permissions for resource deployment.
+
+
+Configuration Snapshots:
