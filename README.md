@@ -23,7 +23,7 @@ Configuration Snapshots:
 1. Custom Deployment
 Execute a customized deployment of Microsoft Sentinel within the Azure Cloud environment.
 Github Repository for Deployment: (https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Sentinel-All-In-One)
-[Imgur](https://i.imgur.com/my8ctDy.png)
+[Imgur](https://i.imgur.com/my8ctDy.jpg)
 
 
 2.Diagnostic Settings
