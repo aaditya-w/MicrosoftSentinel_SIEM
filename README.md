@@ -6,13 +6,13 @@ This project showcases the successful deployment of Microsoft Sentinel, a powerf
 
 ### Prerequisites:
 Before starting with this project, make sure you have the following:
-- Azure Account:
+- **Azure Account:**
 Create or use an existing Azure Cloud account.
-- Microsoft Sentinel:
+- **Microsoft Sentinel:**
  Obtain the necessary licenses for Microsoft Sentinel.
-- Azure Sentinel Workspace:
+- **Azure Sentinel Workspace:**
  Set up an Azure Sentinel workspace following the official documentation.
-- Access Permissions:
+- **Access Permissions:**
  Ensure your Azure account has the required permissions for resource deployment.
 
 <br>
@@ -25,7 +25,7 @@ Create or use an existing Azure Cloud account.
 
 ![Imgur](https://i.imgur.com/my8ctDy.jpg)
 
-<br>
+<br><hr>
 
 
 #### Diagnostic Settings
@@ -33,7 +33,7 @@ Create or use an existing Azure Cloud account.
 
  ![Imgur](https://i.imgur.com/KagDPMO.jpg)
  
- <br>
+ <br><hr>
  
 
 #### Sentinel  Overview
@@ -41,14 +41,14 @@ Create or use an existing Azure Cloud account.
 
 ![Imgur](https://i.imgur.com/JWpXKcW.jpg)
 
-<br>
+<br><hr>
 
 #### Sentinel Logs
 - Highlight the logs section in Azure Sentinel, emphasizing the recorded security events.
 
 ![Imgur](https://i.imgur.com/tJcSgEz.jpg)
 
-<br>
+<br><hr>
 
 
 #### Entity Behaviour Configuration
@@ -56,7 +56,7 @@ Create or use an existing Azure Cloud account.
 
 ![Imgur](https://i.imgur.com/yAa35hc.jpg)
 
-<br>
+<br><hr>
 
 
 #### Watchlist creation
@@ -64,7 +64,7 @@ Create or use an existing Azure Cloud account.
 
 ![Imgur](https://i.imgur.com/5g0Pgqq.jpg)
 
-<br>
+<br><hr>
 
 
 #### Analytics Rule
@@ -91,19 +91,19 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
     ConditionalAccessPolicies
 ```
 
-<br>
+<br><hr>
 
 ![Imgur](https://i.imgur.com/6agcuGf.jpg)
 ![Imgur](https://i.imgur.com/xEjUhgO.jpg)
 
-<br>
+<br><hr>
 
 #### Creating New User
 - Create a new user account within the Azure environment.
 
 ![Imgur](https://i.imgur.com/tLKUvh7.jpg)
 
-<br>
+<br><hr>
 
 
 #### Assigning role to new user
@@ -111,7 +111,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/AlgOglV.jpg)
 
-<br>
+<br><hr>
 
 
 #### New user login
@@ -119,7 +119,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/5lHhmus.jpg)
 
-<br>
+<br><hr>
 
 
 #### Delete Diagnostic Setting
@@ -127,7 +127,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/dRAlQAl.jpg)
 
-<br>
+<br><hr>
 
 
 #### Creating VM
@@ -136,7 +136,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 ![Imgur](https://i.imgur.com/n6v7cJJ.jpg)
 ![Imgur](https://i.imgur.com/Np5GgKc.jpg)
 
-<br>
+<br><hr>
 
 
 #### Microsoft Sentinel Overview
@@ -144,7 +144,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/5kqDpAA.jpg)
 
-<br>
+<br><hr>
 
 
 #### Captured Incidents
@@ -152,7 +152,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/baLriCO.jpg)
 
-<br>
+<br><hr>
 
 
 #### Investigating Incident
@@ -160,7 +160,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/mfJuygg.jpg)
 
-<br>
+<br><hr>
 
 
 #### Logs
@@ -168,7 +168,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/HHimdjo.jpg)
 
-<br>
+<br><hr>
 
 
 #### Closing Incidents
@@ -176,7 +176,7 @@ let TorNodes = (_GetWatchlist('Tor-ip-addresses') | project TorIP = IpAddress);
 
 ![Imgur](https://i.imgur.com/aYmaDBs.jpg)
 
-<br>
+<br><hr>
 
 
 #### AbuseIPDB
